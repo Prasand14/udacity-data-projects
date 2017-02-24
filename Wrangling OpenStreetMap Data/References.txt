@@ -1,0 +1,6 @@
+1. https://gist.github.com/carlward/54ec1c91b62a5f911c42#file-sample_project-md
+2. https://www.postgresql.org/docs/9.4/static/datatype.html
+3. https://gist.github.com/carlward/4a87fc6f94f16d7b11753a8f65da9572
+4. Python Documentation - defaultdict, xml 
+5. StackOverflow
+6. www.w3schools.com

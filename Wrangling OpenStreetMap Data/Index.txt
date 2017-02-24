@@ -1,0 +1,8 @@
+Index of Files:
+
+> parser.py - Gives a top level overview of tags
+> audit.py - Audits the data
+> clean.py - Cleans the data and updates names
+> sample_generate.py - Generates a sample of the dataset
+> sample_new.osm - Sample of the original dataset
+> hyderabad.db - The database of nodes, ways and their corresponding tags
