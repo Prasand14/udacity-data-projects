@@ -132,7 +132,7 @@ def clean_up(osm_file):
 
 The corrected postal codes should look like this:
 
-* A seven digit postal code: `'502137'`
+* A seven digit postal code: `'50001'`
 * An out of bounds postal code: `'500001'`
 * Incorrectly spaced postal code: `'500081'`
 
