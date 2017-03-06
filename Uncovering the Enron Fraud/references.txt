@@ -1,0 +1,6 @@
+References
+
+1. http://scikit-learn.org/0.15/auto_examples/grid_search_digits.html
+2. StackOverflow
+3. Scikit-learn Documentation
+4. Wikipedia
