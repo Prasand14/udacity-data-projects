@@ -1,6 +1,5 @@
 
 # Wrangling Openstreetmap Data with SQL
----
 
 **Location:** Hyderabad, India
 
@@ -12,7 +11,6 @@ I chose to examine the map area for the city of Hyderabad because it's my city o
 
 
 ## Top-Level Audit
----
 
 I used the ```parse.py``` to get a top level overview of my XML file. I saw that the dataset was composed of the following tags:
 
@@ -25,7 +23,7 @@ I used the ```parse.py``` to get a top level overview of my XML file. I saw that
 
 
 ## Problems Encountered
----
+
 
 On auditing a sample of the dataset using `audit.py`, I ran into the following errors:
 
@@ -138,7 +136,6 @@ The corrected postal codes should look like this:
 
 
 ## Dataset Overview and Exploration
----
 
 Here I included some basic statistics about my database, the code used to create and fill in the tables in my database, and some additional exploration that I carried out.
 
