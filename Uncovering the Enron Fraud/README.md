@@ -1,6 +1,5 @@
 
 # Uncovering the Enron Fraud
----
 
 Enron was an American energy giant. At it's peak, Enron was worth more than $70 billion. Enron's might came crashing down in the wake of one of the biggest [corporate scandals](http://www.npr.org/news/specials/enron/) in 2001. This project aims at uncovering the perpatrators and parties to the fraud.
 
@@ -8,7 +7,6 @@ I look at a dataset composed of emails and financial information pertaining to 1
 
 
 ## Dataset Exploration
----
 
 The dataset in question is composed of **21** features for **146** people associated with Enron. Out of the 146, **18** executives are listed as Persons-of-Interest (PoIs). Clearly there is an imbalance in the number of PoIs vs the number of non-PoIs, this means an alogrithm is very likely to get the non-PoIs classified correctly. It will be prudent to implement rigorous validation, and the right evaluation metrics as a check for this imbalance.
 
@@ -110,7 +108,7 @@ I visualized `salary` vs `bonus` in a scatter plot, and found that one record, `
 
 
 ## Feature Selection
----
+
 Feature Selection is crucial to training an accurate and efficient classifier. My dataset cosists of Fiancial + Email information. All variables measure either one of these two broad latent variables - financial incentives and email interaction with Persons of Interest. Intuitively, both these variables should have some special information associated with them.
 
 I will check for the power of each of these features to test my hypothesis, and will try to include at least one feature measuring each of the two latent variables.
@@ -136,7 +134,6 @@ I then used `SelectKBest` to find the best features. I first chose 5 features, b
 ```
 
 ## The Algorithm
----
 
 I tried out four algorithms with default parameters for starters. I split the dataset into train and test with a random seed of `41`. Here's how these algorithms performed: 
 
@@ -201,7 +198,6 @@ I will focus on bettering three classifiers that had the best precision and reca
 
 
 ## Algorithm (Parameter) Tuning
----
 
 It is imperative that we tune our algorithms to our data and available features to get the best possible performance. Tuning an algorithm lets us avoid overfitting, and ensure that the algorithm generalizes well. 
 
@@ -256,7 +252,6 @@ Precision: 0.4375
 Including these leads to an increased precision score, but a reduced recall score - a tradeoff that is not acceptable to me.
 
 ## Validation
----
 
 Validation is a key step to measure and ensure our algorithm generalizes well beyond the data we have. It is prudent to validate the veracity of the results the algorithm generates from the current dataset.
 
@@ -268,7 +263,6 @@ I implemented `StatifiedShuffleSplit` by means of `GridSearchCV`.
 
 
 ## Evaluation
----
 
 For evaluating my classifiers, I used `recall` and `precision`. 
 
